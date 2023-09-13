@@ -430,8 +430,25 @@
 							$main._show(location.hash.substr(1), true);
 						});
 
-			// Hide Alumni email.
-				for (let el of document.getElementById('alumni').getElementsByTagName('a')) el.style.visibility = 'hidden';
+		// Hide Alumni email
+			for (let el of document.getElementById('alumni').getElementsByTagName('a')) el.style.visibility = 'hidden';
+
+		// Change logo on click
+			$(document).ready(function() {
+				$('.logo').hover(
+					function() {
+						$(this).css('cursor', 'pointer');
+					},
+					function() {
+						$(this).css('cursor', 'auto');
+					}
+				);
+				
+				$('.logo').click(function() {
+					$('span.fa-regular').toggleClass('fa-solid');
+				});
+			});
+
 	});
 
 })(jQuery);

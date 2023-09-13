@@ -1,4 +1,4 @@
-@import url("font-awesome-4.7.0/css/font-awesome.min.css");
+/* @import url("font-awesome-4.7.0/css/font-awesome.min.css"); */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
 /*
@@ -284,6 +284,11 @@
 
 	.align-right {
 		text-align: right;
+	}
+
+	.mark {
+		color:#f14554;
+		font-weight: 600;
 	}
 
 /* Form */
@@ -1143,7 +1148,7 @@
 		}
 
 		body.is-loading #bg:before {
-			background-color: #000000;
+			background-color: #1b1f22;
 		}
 
 /* Wrapper */
