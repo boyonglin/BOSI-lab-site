@@ -1,12 +1,12 @@
 # BOSI-lab-site
-> Website of the Biomedical Optical Spectroscopy and Imaging Laboratory
+> Website of the Biomedical Optical Spectroscopy and Imaging Laboratory of Graduate Institute of Biomedical Electronics and Bioinformatics National Taiwan University
 
 ---
 
 Credits:
 
 	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
+		Font Awesome (fontawesome.com/icons)
 
 	Other:
 		jQuery (jquery.com)
