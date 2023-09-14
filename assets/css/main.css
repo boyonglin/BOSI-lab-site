@@ -47,6 +47,21 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	figcaption {
+		display: flex;
+		justify-content: left;
+		text-align: left;
+		max-width: 75%;
+		margin: 0 auto 2rem auto;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		figcaption {
+			max-width: 100%;
+		}
+	}
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -225,15 +240,15 @@
 	}
 
 	sub {
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 		position: relative;
-		top: 0.5rem;
+		top: 0.1rem;
 	}
 
 	sup {
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 		position: relative;
-		top: -0.5rem;
+		top: -0.4rem;
 	}
 
 	blockquote {
@@ -667,21 +682,17 @@
 				width: 100%;
 			}
 
-		.image.main {
-			display: block;
+		.image.main, .image.half {
 			margin: 2.5rem 0;
 			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 			.image.main img {
-				width: 100%;
+				width: 75%;
 			}
-
-		.image.half {
-			display: block;
-			margin: 2.5rem 0;
-			width: 100%;
-		}
 
 			.image.half img {
 				width: 50%;
@@ -690,18 +701,26 @@
 
 		@media screen and (max-width: 736px) {
 
-			.image.main {
+			.image.main, .image.half {
 				margin: 2rem 0;
 			}
+
+				.image.half img {
+					width: 75%;
+				}
 
 		}
 
 		@media screen and (max-width: 480px) {
 
-			.image.main {
+			.image.main, .image.half {
 				margin: 1.5rem 0;
 			}
 
+				.image.half img, .image.main img {
+					width: 100%;
+
+				}
 		}
 
 /* List */
